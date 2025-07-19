@@ -2,6 +2,7 @@ import { CalculatorForm } from "@/components/calculator-form";
 import { ResultsCard } from "@/components/results-card";
 import { ScenarioAnalysis } from "@/components/scenario-analysis";
 import { ModeToggle } from "@/components/mode-toggle";
+import { CalculationSteps } from "@/components/calculation-steps";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <div className="space-y-6">
           <CalculatorForm />
           <ResultsCard />
+          <CalculationSteps />
         </div>
         <ScenarioAnalysis />
       </div>
