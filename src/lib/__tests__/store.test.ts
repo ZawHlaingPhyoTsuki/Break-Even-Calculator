@@ -28,7 +28,7 @@ describe("BreakEven Store", () => {
 
     const state = useBreakEvenStore.getState();
     expect(state.error).toBe(
-      "Selling price must be greater than variable costs"
+      "Selling price must be greater than variable costs",
     );
     // Verify it reverted to previous values
     expect(state.sellingPrice).toBe(25);

@@ -1,7 +1,7 @@
 import { CalculatorForm } from "@/components/calculator-form";
+import { ModeToggle } from "@/components/mode-toggle";
 import { ResultsCard } from "@/components/results-card";
 import { ScenarioAnalysis } from "@/components/scenario-analysis";
-import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
   return (

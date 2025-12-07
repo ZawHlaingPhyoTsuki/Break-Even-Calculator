@@ -1,8 +1,8 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
 
 export function formatTHB(amount: number): string {
@@ -20,7 +20,7 @@ export function formatTHB(amount: number): string {
 export function calculateBreakEven(
   fixedCosts: number,
   variableCosts: number,
-  sellingPrice: number
+  sellingPrice: number,
 ) {
   if (sellingPrice <= variableCosts) {
     throw new Error("Selling price must be greater than variable costs");

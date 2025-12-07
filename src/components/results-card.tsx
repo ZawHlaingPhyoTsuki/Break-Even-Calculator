@@ -81,5 +81,5 @@ export function ResultsCard() {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

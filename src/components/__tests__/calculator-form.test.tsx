@@ -17,7 +17,9 @@ describe("CalculatorForm", () => {
     jest.clearAllMocks();
 
     // Mock the store implementation
-    (breakEvenStore.useBreakEvenStore as unknown as jest.Mock).mockImplementation(() => ({
+    (
+      breakEvenStore.useBreakEvenStore as unknown as jest.Mock
+    ).mockImplementation(() => ({
       setValues: mockSetValues,
     }));
 
@@ -61,5 +63,4 @@ describe("CalculatorForm", () => {
       expect(mockSetValues).toHaveBeenCalledWith(50000, 12, 25);
     });
   });
-
 });
