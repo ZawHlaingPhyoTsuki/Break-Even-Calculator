@@ -54,3 +54,5 @@ Technologies used in the project:
 *   Zustand
 *   Jest
 *   Zod
+*   Biomejs
+*   Pnpm
