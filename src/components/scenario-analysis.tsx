@@ -1,8 +1,9 @@
 "use client";
 
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import {
   Table,
   TableBody,
@@ -13,7 +14,6 @@ import {
 } from "@/components/ui/table";
 import { useBreakEvenStore } from "@/lib/store";
 import { formatTHB } from "@/lib/utils";
-import { useState } from "react";
 
 export function ScenarioAnalysis() {
   const {

@@ -1,4 +1,4 @@
-import { formatTHB, calculateBreakEven, cn } from "@/lib/utils";
+import { calculateBreakEven, cn, formatTHB } from "@/lib/utils";
 
 describe("formatTHB", () => {
   it("formats whole numbers with .00 decimals", () => {
@@ -41,7 +41,7 @@ describe("cn", () => {
   it("merges class names correctly", () => {
     expect(cn("px-2", "py-4")).toBe("px-2 py-4");
     expect(cn("text-red-500", "hover:text-red-700")).toBe(
-      "text-red-500 hover:text-red-700"
+      "text-red-500 hover:text-red-700",
     );
     expect(cn(undefined, null, false, "px-4")).toBe("px-4");
   });

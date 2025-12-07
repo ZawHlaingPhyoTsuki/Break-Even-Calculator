@@ -29,37 +29,37 @@ describe("ResultsCard", () => {
 
     // Test fixed costs
     expect(screen.getByTestId("fixed-costs-value")).toHaveTextContent(
-      "฿50,000.00"
+      "฿50,000.00",
     );
 
     // Test variable costs
     expect(screen.getByTestId("variable-costs-value")).toHaveTextContent(
-      "฿12.00"
+      "฿12.00",
     );
 
     // Test selling price
     expect(screen.getByTestId("selling-price-value")).toHaveTextContent(
-      "฿25.00"
+      "฿25.00",
     );
 
     // Test contribution margin
     expect(screen.getByTestId("contribution-margin-value")).toHaveTextContent(
-      "฿13.00"
+      "฿13.00",
     );
 
     // Test margin ratio
     expect(screen.getByTestId("margin-ratio-value")).toHaveTextContent(
-      "52.00%"
+      "52.00%",
     );
 
     // Test break-even units
     expect(screen.getByTestId("break-even-units-value")).toHaveTextContent(
-      "3846 units"
+      "3846 units",
     );
 
     // Test break-even revenue
     expect(screen.getByTestId("break-even-revenue-value")).toHaveTextContent(
-      "฿96,153.85"
+      "฿96,153.85",
     );
   });
 

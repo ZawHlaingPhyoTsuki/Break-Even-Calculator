@@ -24,7 +24,7 @@ const INITIAL_VALUES = {
 const initialCalculations = calculateBreakEven(
   INITIAL_VALUES.fixedCosts,
   INITIAL_VALUES.variableCosts,
-  INITIAL_VALUES.sellingPrice
+  INITIAL_VALUES.sellingPrice,
 );
 
 export const useBreakEvenStore = create<BreakEvenState>()(
@@ -37,7 +37,7 @@ export const useBreakEvenStore = create<BreakEvenState>()(
         try {
           if (price <= variable) {
             throw new Error(
-              "Selling price must be greater than variable costs"
+              "Selling price must be greater than variable costs",
             );
           }
           if (fixed <= 0 || variable < 0 || price <= 0) {
@@ -59,7 +59,7 @@ export const useBreakEvenStore = create<BreakEvenState>()(
           const validCalculations = calculateBreakEven(
             current.fixedCosts,
             current.variableCosts,
-            current.sellingPrice
+            current.sellingPrice,
           );
           set({ ...validCalculations });
         }
@@ -70,7 +70,7 @@ export const useBreakEvenStore = create<BreakEvenState>()(
           ...calculateBreakEven(
             INITIAL_VALUES.fixedCosts,
             INITIAL_VALUES.variableCosts,
-            INITIAL_VALUES.sellingPrice
+            INITIAL_VALUES.sellingPrice,
           ),
           error: undefined,
         });
@@ -83,6 +83,6 @@ export const useBreakEvenStore = create<BreakEvenState>()(
         variableCosts: state.variableCosts,
         sellingPrice: state.sellingPrice,
       }), // only persist these values
-    }
-  )
+    },
+  ),
 );
