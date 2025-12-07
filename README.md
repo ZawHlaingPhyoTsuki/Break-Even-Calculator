@@ -15,7 +15,7 @@
 
 ## 📖 About The Project
 
-The **Break-Even Calculator** is a powerful yet simple tool designed to help businesses and entrepreneurs determine the point at which their total revenues equal total costs. Understanding your break-even point is crucial for setting sales targets, pricing strategies, and ensuring financial stability.
+The **Break-Even Calculator** is a simple tool designed to help businesses determine the point at which their total revenues equal total costs. Understanding your break-even point is crucial for setting sales targets, pricing strategies, and ensuring financial stability.
 
 This application is built with modern web technologies to ensure speed, accuracy, and a seamless user experience.
 
